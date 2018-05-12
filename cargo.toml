@@ -1,0 +1,13 @@
+[workspace]
+members = ["projects/*"]
+default-members = [
+    "projects/panduck-theme-utility",
+    "projects/panduck-theme-tex",
+]
+exclude = [
+
+]
+
+[profile.release]
+lto = true
+opt-level = "s"
