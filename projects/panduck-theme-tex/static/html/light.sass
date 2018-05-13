@@ -1,0 +1,163 @@
+@import "styles/reset"
+@import "fonts/font_face"
+@import "styles/code"
+@import url("https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css")
+@import "math/counter"
+
+/* Make default font-size 1rem and add smooth scrolling to anchors
+
+html
+  font-size: 1rem
+  scroll-behavior: smooth
+
+body
+  &.libertinus
+    font-family: 'Libertinus', Georgia, Cambria, 'Times New Roman', Times, serif
+
+  font-family: 'Latin Modern', Georgia, Cambria, 'Times New Roman', Times, serif
+  line-height: 1.8
+  max-width: 80ch
+  min-height: 100vh
+  overflow-x: hidden
+  margin: 0 auto
+  padding: 2rem 1.25rem
+  color: hsl(0, 5%, 10%)
+  background-color: hsl(210, 20%, 98%)
+  text-rendering: optimizeLegibility
+
+/* Justify and hyphenate all paragraphs
+
+p
+  text-align: justify
+  hyphens: auto
+  -webkit-hyphens: auto
+  -moz-hyphens: auto
+  margin-top: 1rem
+
+/* A elements that don't have a class get default styles
+
+a
+  &:not([class])
+    text-decoration-skip-ink: auto
+
+  color: #a00
+
+  &:visited
+    color: #a00
+
+  &:focus
+    outline-offset: 2px
+    outline: 2px solid hsl(220, 90%, 52%)
+
+/* Make links red
+
+/* Inherit fonts for inputs and buttons
+
+input, button, textarea, select
+  font: inherit
+
+/* Prevent textarea from overflowing
+
+textarea
+  width: 100%
+
+/* Natural flow and rhythm in articles by default
+
+article > * + *
+  margin-top: 1em
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+  width: auto
+  max-width: 100%
+  border-top: 2.27px solid black
+  border-bottom: 2.27px solid black
+  overflow-x: auto
+  counter-increment: caption
+
+  tr > th
+    &[scope='col']
+      border-bottom: 1.36px solid black
+
+    &[scope='row']
+      border-right: 1.36px solid black
+
+  > tbody > tr
+    &:first-child > td, th
+      border-top: 1.36px solid black
+
+    &:last-child > td, th
+      border-bottom: 1.36px solid black
+
+th, td
+  text-align: left
+  padding: 0.5rem
+  line-height: 1.1
+
+.scroll-wrapper
+  overflow-x: auto
+
+  > table td
+    white-space: nowrap
+
+h1:first-child
+  text-align: center
+
+nav
+  ol
+    counter-reset: item
+    padding-left: 2rem
+
+  li
+    display: block
+
+    &:before
+      content: counters(item, ".") " "
+      counter-increment: item
+      padding-right: 0.85rem
+
+dl dd
+  text-align: center
+
+.author
+  margin: 0.85rem 0
+  font-variant-caps: small-caps
+  text-align: center
+
+.footnotes
+  p
+    text-align: left
+    line-height: 1.5
+    font-size: 85%
+    margin-bottom: 0.4rem
+
+  border-top: 1px solid hsl(0, 0%, 39%)
+
+.abstract
+  text-align: center
+  margin: 2.25rem 0
+
+  p
+    text-align: center
+    margin-top: 0
+
+  > h2
+    font-size: 1rem
+    margin-bottom: -0.2rem
+
+.latex span
+  &:nth-child(1)
+    text-transform: uppercase
+    font-size: 0.75em
+    vertical-align: 0.28em
+    margin-left: -0.48em
+    margin-right: -0.15em
+    line-height: 1ex
+
+  &:nth-child(2)
+    text-transform: uppercase
+    vertical-align: -0.5ex
+    margin-left: -0.1667em
+    margin-right: -0.125em
+    line-height: 1ex
