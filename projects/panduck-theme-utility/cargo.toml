@@ -13,6 +13,7 @@ edition = "2021"
 [dev-dependencies]
 serde = "*"
 serde_json = "*"
+rsass = "*"
 
 [features]
 default = []
