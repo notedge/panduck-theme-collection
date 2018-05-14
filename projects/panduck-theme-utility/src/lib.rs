@@ -1,2 +1,3 @@
-mod pipeline;
 mod npm;
+pub mod pipeline;
+

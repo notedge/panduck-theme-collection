@@ -11,8 +11,11 @@ edition = "2021"
 [dependencies]
 
 [dev-dependencies]
-serde = "*"
-serde_json = "*"
+notedown_ast = { version = "0.14.2", features = ["rsass"] }
+
+[dev-dependencies.panduck-theme-utility]
+version = "0.1"
+path = "../panduck-theme-utility"
 
 [features]
 default = []
