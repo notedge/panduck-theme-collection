@@ -1,0 +1,16 @@
+{
+    "name": "panduck-font-libertinus",
+    "version": "1.0.0",
+    "description": "A small CSS library to make your website look like a LaTeX document",
+    "author": "Aster <192607617@qq.com>",
+    "license": "CC0-1.0",
+    "main": "src/lib.rs",
+    "homepage": "https://github.com/notedge/panduck-theme-collection",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/notedge/panduck-theme-collection.git"
+    },
+    "bugs": {
+        "url": "https://github.com/notedge/panduck-theme-collection/discussions"
+    }
+}
