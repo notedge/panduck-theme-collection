@@ -1,17 +1,13 @@
 [package]
-name = "panduck-font-libertinus"
+name = "panduck-font-latin-modern"
 version = "1.0.0"
+publish = false
 authors = ["Aster <192607617@qq.com>"]
-description = "notedown ast and converter"
+description = "Latin Modern: LM Roman, LM Sans Serif, LM Typewriter, LM Dunhill"
 repository = "https://github.com/notedge/notedown-rs"
 readme = "../../readme.md"
 license = "CC0-1.0"
 edition = "2021"
-
-[dependencies]
-
-[dev-dependencies]
-notedown_ast = { version = "0.14.3", features = ["rsass"] }
 
 [dev-dependencies.panduck-theme-utility]
 version = "0.1"

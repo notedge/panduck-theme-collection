@@ -24,23 +24,27 @@ pub fn render_sass(sass: &str, imports: &[PathBuf]) -> Result<String> {
     };
     let mut fs = FsFileContext::new();
     for file in imports {
-        fs.push_path()
+        fs.push_path(file.as_path())
     }
-    let items = parse_scss_data(input)?;
+    let items = parse_scss_data(sass.as_bytes())?;
     let css =format.write_root(&items, ScopeRef::new_global(format), &fs)?;
-
     unsafe {
         Ok(String::from_utf8_unchecked(css))
     }
 }
 
-
-pub fn render_sass_path(sass: &Path) -> Result<String> {
+pub fn render_sass_path(sass: &Path, imports: &[PathBuf]) -> Result<String> {
     let format = Format {
         style: Style::Compressed,
         precision: 5,
     };
-    let css = compile_scss_path(sass, format)?;
+    let mut fs = FsFileContext::new();
+    for file in imports {
+        fs.push_path(file.as_path())
+    }
+    let (sub_context, path) = fs.file(sass);
+    let items = parse_scss_path(&path)?;
+    let css = format.write_root(&items, ScopeRef::new_global(format), &sub_context)?;
     unsafe {
         Ok(String::from_utf8_unchecked(css))
     }
