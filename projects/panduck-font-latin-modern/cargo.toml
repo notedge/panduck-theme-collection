@@ -4,14 +4,10 @@ version = "1.0.0"
 publish = false
 authors = ["Aster <192607617@qq.com>"]
 description = "Latin Modern: LM Roman, LM Sans Serif, LM Typewriter, LM Dunhill"
-repository = "https://github.com/notedge/notedown-rs"
-readme = "../../readme.md"
+repository = "https://github.com/notedge/panduck-theme-collection/tree/main/projects/panduck-font-latin-modern"
+readme = "readme.md"
 license = "CC0-1.0"
 edition = "2021"
-
-[dev-dependencies.panduck-theme-utility]
-version = "0.1"
-path = "../panduck-theme-utility"
 
 [features]
 default = []
