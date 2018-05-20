@@ -4,7 +4,7 @@
     "description": "Libertinus fonts for panduck",
     "author": "Aster <192607617@qq.com>",
     "license": "CC0-1.0",
-    "main": "src/lib.rs",
+    "main": "font_face.css",
     "homepage": "https://github.com/notedge/panduck-theme-collection/tree/master/projects/panduck-font-libertinus",
     "repository": {
         "type": "git",

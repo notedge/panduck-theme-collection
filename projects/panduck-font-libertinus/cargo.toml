@@ -4,7 +4,7 @@ version = "1.0.0"
 authors = ["Aster <192607617@qq.com>"]
 description = "notedown ast and converter"
 repository = "https://github.com/notedge/notedown-rs"
-readme = "../../readme.md"
+readme = "readme.md"
 license = "CC0-1.0"
 edition = "2021"
 
