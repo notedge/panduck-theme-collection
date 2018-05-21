@@ -3,7 +3,7 @@
     font-style: normal;
     font-weight: normal;
     font-display: swap;
-    src: url("./fonts/Libertinus-regular.woff2") format("woff2");
+    src: url("fonts/LibertinusSerif-regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
     font-style: italic;
     font-weight: normal;
     font-display: swap;
-    src: url("./fonts/Libertinus-italic.woff2") format("woff2");
+    src: url("fonts/LibertinusSerif-italic.woff2") format("woff2");
 }
 
 @font-face {
@@ -19,7 +19,7 @@
     font-style: normal;
     font-weight: bold;
     font-display: swap;
-    src: url("./fonts/Libertinus-bold.woff2") format("woff2");
+    src: url("fonts/LibertinusSerif-bold.woff2") format("woff2");
 }
 
 @font-face {
@@ -27,7 +27,7 @@
     font-style: italic;
     font-weight: bold;
     font-display: swap;
-    src: url("./fonts/Libertinus-bold-italic.woff2") format("woff2");
+    src: url("fonts/LibertinusSerif-bolditalic.woff2") format("woff2");
 }
 
 @font-face {
@@ -35,7 +35,7 @@
     font-style: normal;
     font-weight: 600;
     font-display: swap;
-    src: url("./fonts/Libertinus-semibold.woff2") format("woff2");
+    src: url("fonts/LibertinusSerif-semibold.woff2") format("woff2");
 }
 
 @font-face {
@@ -43,5 +43,5 @@
     font-style: italic;
     font-weight: 600;
     font-display: swap;
-    src: url("./fonts/Libertinus-semibold-italic.woff2") format("woff2");
+    src: url("fonts/LibertinusSerif-semibolditalic.woff2") format("woff2");
 }
