@@ -1,0 +1,4 @@
+*.html linguist-detectable=false
+*.min.css linguist-language=ruby
+*.toml linguist-language=ruby
+*.json linguist-language=ruby
